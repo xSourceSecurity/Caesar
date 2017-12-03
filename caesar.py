@@ -66,17 +66,20 @@ class Caesar:
 
 # Configuration printing..
 testingInput = False
-if len(sys.argv) == 5:
-	if len(sys.argv[2]) > 1:
-		if sys.argv[3] == "-k" or sys.argv[3] == "--key":
-			if int(sys.argv[4]) > 0 and int(sys.argv[4]) < len(Caesar.libary()):
-				if sys.argv[1] == "-e" or sys.argv[1] == "--encrypt":
-					testingInput = "enc"
-				elif sys.argv[1] == "-d" or sys.argv[1] == "--decrypt":
-					testingInput = "dcr"
-elif len(sys.argv) == 2:
-	if sys.argv[1] == "-h" or sys.argv[1] == "--help":
-		testingInput = "hlp"
+try:
+	if len(sys.argv) == 5:
+		if len(sys.argv[2]) > 1:
+			if sys.argv[3] == "-k" or sys.argv[3] == "--key":
+				if int(sys.argv[4]) > 0 and int(sys.argv[4]) < len(Caesar.libary()):
+					if sys.argv[1] == "-e" or sys.argv[1] == "--encrypt":
+						testingInput = "enc"
+					elif sys.argv[1] == "-d" or sys.argv[1] == "--decrypt":
+						testingInput = "dcr"
+	elif len(sys.argv) == 2:
+		if sys.argv[1] == "-h" or sys.argv[1] == "--help":
+			testingInput = "hlp"
+except:
+	pass
 # End configuration printing.
 
 # Printing result..
