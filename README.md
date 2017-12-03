@@ -16,9 +16,9 @@ December 03 / 2017
 -h or --help		|	For helping
 
 
--e or --encripth	|	For encription
+-e or --encripth	|	For encryption
 
--d or --decripth	|	For decription
+-d or --decripth	|	For decryption
 
 
 -k or --key		|	Input key (only number > 1)
