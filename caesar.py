@@ -1,4 +1,4 @@
-# Created by	:	Khachatryan Tigran
+# Created by		:	Khachatryan Tigran
 # Contact		:	xachatryan@protonmail.com
 # Language		:	Python3
 
