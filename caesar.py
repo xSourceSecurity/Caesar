@@ -31,7 +31,7 @@ class Caesar:
 
 		return reversecity,city
 
-	def encrypth(string, key):
+	def encrypt(string, key):
 		key = int(key)
 		string = string.lower()
 		lib = Caesar.newlibary(key)[0]
@@ -44,10 +44,10 @@ class Caesar:
 			stack += lib.get(string[i], string[i])
 			i += 1
 
-		crypthstring = stack
-		return crypthstring
+		cryptstring = stack
+		return cryptstring
 
-	def decrypth(crpstring, key):
+	def decrypt(crpstring, key):
 		key = int(key)
 		crpstring = crpstring.lower()
 		lib = Caesar.newlibary(key)[1]
@@ -60,8 +60,8 @@ class Caesar:
 			stack += lib.get(crpstring[i], crpstring[i])
 			i += 1
 
-		crypthstring = stack
-		return crypthstring
+		cryptstring = stack
+		return cryptstring
 # End class.
 
 # Configuration printing..
@@ -70,9 +70,9 @@ if len(sys.argv) == 5:
 	if len(sys.argv[2]) > 1:
 		if sys.argv[3] == "-k" or sys.argv[3] == "--key":
 			if int(sys.argv[4]) > 0 and int(sys.argv[4]) < len(Caesar.libary()):
-				if sys.argv[1] == "-e" or sys.argv[1] == "--encrypth":
+				if sys.argv[1] == "-e" or sys.argv[1] == "--encrypt":
 					testingInput = "enc"
-				elif sys.argv[1] == "-d" or sys.argv[1] == "--decrypth":
+				elif sys.argv[1] == "-d" or sys.argv[1] == "--decrypt":
 					testingInput = "dcr"
 elif len(sys.argv) == 2:
 	if sys.argv[1] == "-h" or sys.argv[1] == "--help":
@@ -81,17 +81,17 @@ elif len(sys.argv) == 2:
 
 # Printing result..
 if testingInput == "enc":
-	result = "[+] Success encryption..\n" + Caesar.encrypth(sys.argv[2], int(sys.argv[4]))
+	result = "[+] Success encryption..\n" + Caesar.encrypt(sys.argv[2], int(sys.argv[4]))
 elif testingInput == "dcr":
-	result = "[+] Success decryption..\n" + Caesar.decrypth(sys.argv[2], int(sys.argv[4]))
+	result = "[+] Success decryption..\n" + Caesar.decrypt(sys.argv[2], int(sys.argv[4]))
 elif testingInput == "hlp":
 	result = '''
-	[Caesar crypther / decrypther]
+	[Caesar crypter / decrypter]
 	===================================================
 	-h or --help		|	For helping
 
-	-e or --encrypth	|	For encription
-	-d or --decrypth	|	For decription
+	-e or --encrypt		|	For encryption
+	-d or --decrypt		|	For decryption
 
 	-k or --key		|	Input key (only number > 1)
 
