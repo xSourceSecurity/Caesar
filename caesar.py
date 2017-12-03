@@ -60,8 +60,8 @@ class Caesar:
 			stack += lib.get(crpstring[i], crpstring[i])
 			i += 1
 
-		cryptstring = stack
-		return cryptstring
+		decryptstring = stack
+		return decryptstring
 # End class.
 
 # Configuration printing..
