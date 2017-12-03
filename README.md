@@ -10,18 +10,20 @@ Language		:	Python3 (only)
 
 December 03 / 2017
 
+
 [Manual]
 ===================================================
 
 -h or --help		|	For helping
 
 
--e or --encripth	|	For encryption
+-e or --encrypth	|	For encryption
 
--d or --decripth	|	For decryption
+-d or --decrypth	|	For decryption
 
 
 -k or --key		|	Input key (only number > 1)
+
 
 [Examples]
 ===================================================
@@ -34,6 +36,7 @@ caesar.py -d wxvmrk -k 4		|	Result:	string
 caesar.py -e "This is text" -k 4	|	Result:	xlmw mw xibx
 
 caesar.py -d "xlmw mw xibx" -k 4	|	Result:	this is text
+
 
 [FaQ]
 ===================================================
