@@ -89,7 +89,7 @@ elif testingInput == "dcr":
 	result = "[+] Success decryption..\n" + Caesar.decrypt(sys.argv[2], int(sys.argv[4]))
 elif testingInput == "hlp":
 	result = '''
-	[Caesar cipher / decypher]
+	[Caesar cipher]
 	===================================================
 	-h or --help		|	For helping
 
