@@ -14,7 +14,7 @@
 [Manual]
 ===================================================
 
-```python
+```
 -h or --help		|	For helping
 
 
@@ -29,7 +29,7 @@
 [Examples]
 ===================================================
 
-```python
+```
 caesar.py -e string -k 4		|	Result:	wxvmrk
 
 caesar.py -d wxvmrk -k 4		|	Result:	string
@@ -43,6 +43,4 @@ caesar.py -d "xlmw mw xibx" -k 4	|	Result:	this is text
 [FaQ]
 ===================================================
 
-If you have a questions send me - xachatryan@protonmail.com
-
-Thank you for downloading :)
+* If you have a questions send me - xachatryan@protonmail.com. Thank you for downloading :)
