@@ -30,7 +30,6 @@
 caesar.py -e string -k 4		|	Result:	wxvmrk
 caesar.py -d wxvmrk -k 4		|	Result:	string
 
-
 caesar.py -e "This is text" -k 4	|	Result:	xlmw mw xibx
 caesar.py -d "xlmw mw xibx" -k 4	|	Result:	this is text
 ```
