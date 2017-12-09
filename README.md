@@ -15,15 +15,15 @@
 ===================================================
 
 ```
--h or --help		|	For helping
+-h or --help        |	For helping
 
 
--e or --encrypt	|	For encryption
+-e or --encrypt     |	For encryption
 
--d or --decrypt	|	For decryption
+-d or --decrypt     |	For decryption
 
 
--k or --key		|	Input key (only number > 1)
+-k or --key         |	Input key (only number > 1)
 ```
 
 [Examples]
