@@ -37,4 +37,4 @@ caesar.py -d "xlmw mw xibx" -k 4	|	Result:	this is text
 [FaQ]
 ===================================================
 
-* If you have a questions send me - xachatryan@protonmail.com. Thank you for downloading :)
+* If you have any questions send me - xachatryan@protonmail.com. Thank you for downloading :)
